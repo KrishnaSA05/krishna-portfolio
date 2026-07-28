@@ -24,7 +24,7 @@ I'm currently completing my Master's in International Automotive Engineering (AI
       company: "VITRONIC Machine Vision GmbH",
       location: "Wiesbaden, Germany",
       period: "August 2025 - June 2026",
-      current: true,
+      current: false,
       achievements: [
       "Designed and trained a Siamese architecture with ResNet and Vision Transformer backbones in PyTorch to learn discriminative vehicle embeddings, achieving 94% pairwise verification accuracy and a 12% Rank-1 improvement over baseline.",
       "Built a real-time vehicle retrieval and pairwise classification pipeline on NVIDIA A100 GPUs, validated with Grad-CAM, occlusion analysis, and t-SNE embedding visualization.",
