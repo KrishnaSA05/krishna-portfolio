@@ -13,7 +13,7 @@ export const portfolioData = {
 
   about: `AI/ML Engineer and Data Scientist with 2.5+ years of hands-on experience developing and deploying end-to-end AI solutions across Generative AI, Computer Vision, NLP, and predictive analytics. I've built production-ready systems including agentic RAG applications, deep learning models, multimodal retrieval pipelines, and MLOps-enabled services using Python, PyTorch, TensorFlow, LangChain, LangGraph, FastAPI, Docker, Azure, and AWS.
 
-My work spans a Master's thesis on deep-feature vehicle re-identification with VITRONIC Machine Vision in Germany, an internship at Schaeffler building agentic RAG pipelines on Azure OpenAI with Microsoft Teams integration, and a research role at CARISSMA analyzing multi-sensor EV telemetry data. Alongside this, I actively build independent projects — from agentic RAG systems for enterprise data to fraud detection and image segmentation pipelines.
+My work spans a Master's thesis on deep-feature vehicle re-identification with VITRONIC Machine Vision in Germany, an internship at Schaeffler building agentic RAG pipelines on Azure OpenAI with Microsoft Teams integration, and a research role at CARISSMA analyzing multi-sensor EV telemetry data. Alongside this, I actively build independent projects - from agentic RAG systems for enterprise data to fraud detection and image segmentation pipelines.
 
 I completed my Master's in International Automotive Engineering (AI/ML & Data Science focus) at Technische Hochschule Ingolstadt, Germany, and I'm passionate about building reliable, scalable AI systems that solve real business problems - particularly in agentic RAG, MLOps, and applied computer vision. Fluent in English, with working professional German (B2).`,
 
