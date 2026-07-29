@@ -4,6 +4,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider";
+import CustomCursor from "@/components/custom-cursor";
 import Home from "@/pages/home";
 import ProjectDetail from "@/pages/project-detail";
 import NotFound from "@/pages/not-found";
@@ -27,6 +28,7 @@ function App() {
       <ThemeProvider defaultTheme="light" storageKey="portfolio-ui-theme">
         <TooltipProvider>
           <Toaster />
+          <CustomCursor />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
