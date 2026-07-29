@@ -202,7 +202,11 @@ export function HeroSection() {
               className="group w-14 h-14 rounded-full glass-card hover:bg-red-500/20 transition-all duration-300"
               data-testid="email-link"
             >
-              <a href={`mailto:${personal.email}`}>
+  
+              < a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${personal.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Mail className="w-6 h-6 group-hover:scale-125 transition-transform duration-300" />
               </a>
             </Button>
