@@ -14,7 +14,7 @@ export function AboutSection() {
         </div>
 
         <div className="animate-slide-up">
-          <div className="prose prose-lg mx-auto text-center max-w-none">
+          <div className="prose prose-lg dark:prose-invert mx-auto text-center max-w-none">
             {about.split('\n\n').map((paragraph, index) => (
               <p
                 key={index}
