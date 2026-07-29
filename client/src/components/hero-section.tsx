@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import {
-  Download,
+  //Download,
   Mail,
   Github,
   Linkedin,
@@ -12,7 +12,7 @@ import { portfolioData } from "@/data/portfolio";
 
 export function HeroSection() {
   const { personal } = portfolioData;
-
+  /*
   const handleDownloadResume = () => {
     // The path to your resume file in the public folder (served at the site root)
     // Make sure the PDF file is copied to `client/public` with this filename.
@@ -44,7 +44,7 @@ export function HeroSection() {
 
     console.log("Downloading resume...");
   };
-
+  */
   const scrollToContact = () => {
     const element = document.getElementById("contact");
     if (element) {
@@ -133,6 +133,7 @@ export function HeroSection() {
 
           {/* CTA Buttons with enhanced styling */}
           <div className="flex flex-wrap justify-center gap-6 mb-16">
+            {/*
             <Button
               onClick={handleDownloadResume}
               size="lg"
@@ -142,7 +143,7 @@ export function HeroSection() {
               <Download className="w-5 h-5 mr-3 group-hover:animate-bounce" />
               Download Resume
             </Button>
-
+              */}
             <Button
               variant="outline"
               size="lg"
