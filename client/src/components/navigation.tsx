@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "./theme-provider";
 import { Sun, Moon, Menu, X, Code } from "lucide-react";
 
 export function Navigation() {
   const { theme, setTheme } = useTheme();
+  const [location, navigate] = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -21,11 +23,27 @@ export function Navigation() {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToElement = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-      setIsMobileMenuOpen(false);
+    }
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    setIsMobileMenuOpen(false);
+
+    if (location !== "/") {
+      // Not on the home page (e.g. viewing a project detail page):
+      // navigate home first, then scroll once the sections have rendered.
+      navigate("/");
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          scrollToElement(sectionId);
+        });
+      });
+    } else {
+      scrollToElement(sectionId);
     }
   };
 

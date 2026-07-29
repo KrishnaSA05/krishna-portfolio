@@ -1,4 +1,4 @@
-import { useParams, Link } from "wouter";
+import { useParams, Link, useLocation } from "wouter";
 import {
   ArrowLeft,
   Calendar,
@@ -22,8 +22,21 @@ import { Navigation } from "@/components/navigation";
 export default function ProjectDetail() {
   const params = useParams();
   const projectId = params.id;
+  const [, navigate] = useLocation();
 
   const project = portfolioData.projects.find((p) => p.id === projectId);
+
+  const goToSection = (sectionId: string) => {
+    navigate("/");
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  };
 
   useLayoutEffect(() => {
     // Run synchronously before paint to avoid showing the wrong scroll position
@@ -58,16 +71,15 @@ export default function ProjectDetail() {
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto">
-          <Link href="/#projects">
-            <Button
-              variant="ghost"
-              className="mb-8 group"
-              data-testid="back-to-projects"
-            >
-              <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-              Back to Projects
-            </Button>
-          </Link>
+          <Button
+            variant="ghost"
+            className="mb-8 group"
+            onClick={() => goToSection("projects")}
+            data-testid="back-to-projects"
+          >
+            <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
+            Back to Projects
+          </Button>
 
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-4">
@@ -313,19 +325,20 @@ export default function ProjectDetail() {
               solutions could benefit your organization.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/#contact">
-                <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
-                >
-                  Get In Touch
-                </Button>
-              </Link>
-              <Link href="/#projects">
-                <Button variant="outline" size="lg">
-                  View More Projects
-                </Button>
-              </Link>
+              <Button
+                size="lg"
+                onClick={() => goToSection("contact")}
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+              >
+                Get In Touch
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => goToSection("projects")}
+              >
+                View More Projects
+              </Button>
             </div>
           </div>
         </div>
