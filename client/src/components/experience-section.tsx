@@ -141,7 +141,7 @@ export function ExperienceSection() {
             </div>
             <div className="p-6">
               <div className="text-3xl font-bold gradient-text mb-2">10+</div>
-              <p className="text-muted-foreground">AI Projects Delivered</p>
+              <p className="text-muted-foreground">AI Projects Worked On</p>
             </div>
             <div className="p-6">
               <div className="text-3xl font-bold gradient-text mb-2">95%</div>
