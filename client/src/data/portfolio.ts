@@ -15,7 +15,7 @@ export const portfolioData = {
 
 My work spans a Master's thesis on deep-feature vehicle re-identification with VITRONIC Machine Vision in Germany, an internship at Schaeffler building agentic RAG pipelines on Azure OpenAI with Microsoft Teams integration, and a research role at CARISSMA analyzing multi-sensor EV telemetry data. Alongside this, I actively build independent projects — from agentic RAG systems for enterprise data to fraud detection and image segmentation pipelines.
 
-I'm currently completing my Master's in International Automotive Engineering (AI/ML & Data Science focus) at Technische Hochschule Ingolstadt, Germany, and I'm passionate about building reliable, scalable AI systems that solve real business problems — particularly in agentic RAG, MLOps, and applied computer vision. Fluent in English, with working professional German (B2).`,
+I completed my Master's in International Automotive Engineering (AI/ML & Data Science focus) at Technische Hochschule Ingolstadt, Germany, and I'm passionate about building reliable, scalable AI systems that solve real business problems - particularly in agentic RAG, MLOps, and applied computer vision. Fluent in English, with working professional German (B2).`,
 
   experience: [
     {
