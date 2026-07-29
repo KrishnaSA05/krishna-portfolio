@@ -118,7 +118,7 @@ export function ExperienceSection() {
                       <div className="flex items-center justify-between text-xs text-muted-foreground">
                         <span className="flex items-center">
                           <div className="w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 mr-2"></div>
-                          Experience Level: {index === 0 ? 'Senior' : index === 1 ? 'Mid-Level' : 'Entry-Level'}
+                          Experience Level: {exp.level}
                         </span>
                         <span>
                           {exp.achievements.length} Major Achievements
