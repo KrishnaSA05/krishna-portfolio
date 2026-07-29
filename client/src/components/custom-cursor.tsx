@@ -80,7 +80,7 @@ export default function CustomCursor() {
         }
       `}</style>
 
-      {/* Arrow cursor, tracks mouse exactly */}
+      {/* Simple gradient arrow cursor, tracks mouse exactly (same shape always) */}
       <div
         ref={dotRef}
         className="fixed top-0 left-0 pointer-events-none z-[9999] transition-transform duration-100 ease-out"
@@ -89,17 +89,21 @@ export default function CustomCursor() {
         }}
       >
         <svg
-          width="22"
-          height="22"
-          viewBox="0 0 22 22"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
+          <defs>
+            <linearGradient id="cursor-arrow-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#2563eb" />
+              <stop offset="100%" stopColor="#93c5fd" />
+            </linearGradient>
+          </defs>
           <path
-            d="M2 2L2 18.5L6.5 14.5L9.5 20.5L12 19.3L9 13.3L15 13L2 2Z"
-            fill="#3b82f6"
-            stroke="white"
-            strokeWidth="1"
+            d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z"
+            fill="url(#cursor-arrow-gradient)"
             strokeLinejoin="round"
           />
         </svg>
