@@ -105,7 +105,7 @@ export function HeroSection() {
               className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-200 dark:to-gray-400 bg-clip-text text-transparent"
               data-testid="hero-title"
             >
-              AI Engineer & ML Innovator
+              AI/ML Engineer & Data Scientist
             </p>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Building the future with{" "}
@@ -113,10 +113,15 @@ export function HeroSection() {
               ,
               <span className="text-purple-500 font-semibold">
                 {" "}
+                Machine Learning
+              </span>
+              ,
+              <span className="text-cyan-500 font-semibold">
+                {" "}
                 Computer Vision
               </span>
               , and
-              <span className="text-cyan-500 font-semibold">
+              <span className="text-green-500 font-semibold">
                 {" "}
                 Large Language Models
               </span>
