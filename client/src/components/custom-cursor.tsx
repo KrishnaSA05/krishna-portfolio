@@ -80,18 +80,30 @@ export default function CustomCursor() {
         }
       `}</style>
 
-      {/* Small solid dot, tracks mouse exactly */}
+      {/* Arrow cursor, tracks mouse exactly */}
       <div
         ref={dotRef}
-        className="fixed top-0 left-0 pointer-events-none z-[9999] rounded-full bg-blue-500 transition-transform duration-100 ease-out"
+        className="fixed top-0 left-0 pointer-events-none z-[9999] transition-transform duration-100 ease-out"
         style={{
-          width: 8,
-          height: 8,
-          marginLeft: -4,
-          marginTop: -4,
           opacity: isVisible ? 1 : 0,
         }}
-      />
+      >
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 22 22"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 2L2 18.5L6.5 14.5L9.5 20.5L12 19.3L9 13.3L15 13L2 2Z"
+            fill="#3b82f6"
+            stroke="white"
+            strokeWidth="1"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </div>
 
       {/* Larger ring, trails with lag, scales up on hover */}
       <div
