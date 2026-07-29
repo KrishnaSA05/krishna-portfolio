@@ -25,6 +25,7 @@ I'm currently completing my Master's in International Automotive Engineering (AI
       location: "Wiesbaden, Germany",
       period: "August 2025 - June 2026",
       current: false,
+      level: "Senior-Level",
       achievements: [
       "Designed and trained a Siamese architecture with ResNet and Vision Transformer backbones in PyTorch to learn discriminative vehicle embeddings, achieving 94% pairwise verification accuracy and a 12% Rank-1 improvement over baseline.",
       "Built a real-time vehicle retrieval and pairwise classification pipeline on NVIDIA A100 GPUs, validated with Grad-CAM, occlusion analysis, and t-SNE embedding visualization.",
@@ -38,6 +39,7 @@ I'm currently completing my Master's in International Automotive Engineering (AI
       location: "Herzogenaurach, Germany",
       period: "January 2025 - June 2025",
       current: false,
+      level: "Senior-Level",
       achievements: [
       "Designed and deployed an agentic RAG chatbot using LangGraph and Azure OpenAI, integrated with the Glassdollar supplier API and Microsoft Teams, achieving 80% retrieval accuracy on user requests.",
       "Built a scouting RAG chatbot using LangChain, Qdrant, and Hugging Face embeddings, cutting information retrieval time by over 60% through optimized chunking and re-ranking.",
@@ -51,6 +53,7 @@ I'm currently completing my Master's in International Automotive Engineering (AI
       location: "Ingolstadt, Germany",
       period: "March 2024 - December 2024",
       current: false,
+      level: "Mid-Level",
       achievements: [
       "Built an end-to-end ML pipeline, automated with Apache Airflow, to extract, clean, and transform multi-source EV telemetry data via SQL-based ETL.",
       "Performed EDA on 28 sensor features and engineered 40+ features — including rolling statistics, lagged temporal features, and physics-based terms — to predict real-time power in electric vehicles (BMW i3).",
@@ -64,6 +67,7 @@ I'm currently completing my Master's in International Automotive Engineering (AI
       location: "Nashik, India",
       period: "October 2022 - September 2023",
       current: false,
+      level: "Entry-Level",
       achievements: [
         "Developed PFMEAs, POS, and QC plans and supported electronics system documentation for the Thar 502 model.",
         "Leveraged Industrial IoT sensor data and TPM metrics to drive process optimization decisions, improving operational efficiency by 23% and reducing workplace errors by 20%."
