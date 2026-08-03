@@ -7,7 +7,7 @@ export const portfolioData = {
     phone: "+919922383400",
     linkedin: "https://www.linkedin.com/in/krishna-ambekar-b4a2641b2",
     github: "https://github.com/KrishnaSA05",
-    profileImage: "/Images/DSC_0396blurcvx.JPG",
+    profileImage: "/Images/DSC_0396blurcvx1.png",
     leetcode: "https://leetcode.com/u/KrishnaSA05/"
   },
 
